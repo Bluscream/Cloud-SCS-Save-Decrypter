@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: puma -p 3000 -e production
+    volumes:
+      - .:/Cloud-SCS-Save-Decrypter
+    ports:
+      - "3000:3000"

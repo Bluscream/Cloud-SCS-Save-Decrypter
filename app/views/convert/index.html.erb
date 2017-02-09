@@ -1,0 +1,22 @@
+<h1>Cloud SCS Save Decrypter</h1>
+
+<p>
+  This is the cloud version of the Savegame decrypter from the scs forum:
+  <a href="http://forum.scssoft.com/viewtopic.php?f=34&t=164103">forum.scssoft.com/viewtopic.php?f=34&t=164103</a>
+</p>
+<hr>
+Readme from the Savegame decrypter:
+<br><br>
+<code>
+  This will extract encrypted ETS2 .sii files, e.g., <br>
+  the profile.sii and savegame files (info.sii, game.sii). <br>
+  However, it should work with any .sii file starting with <br>
+  the "magic" header bytes "ScsC". <br>
+</code>
+<hr>
+<b>Make sure that you have set <i>g_save_format</i> to <i>2</i>, otherwise the tool won't be able to decrypt the file!</b>
+<%= form_tag 'convert/submit', :multipart => true do %>
+    <label for="file">Upload sii File</label> <%= file_field_tag "file" %>
+    <br>
+    <%= submit_tag 'Decrypt File' %>
+<% end %>
