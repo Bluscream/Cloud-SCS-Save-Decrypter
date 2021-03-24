@@ -79,7 +79,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.11.2-x64-mingw32)
       racc (~> 1.4)
-    puma (3.7.0)
+    puma (3.12.6)
     racc (1.5.2)
     rack (2.2.3)
     rack-test (0.6.3)
@@ -154,7 +154,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   jquery-rails
-  puma (~> 3.0)
+  puma (~> 3.12)
   rails (~> 5.0.1)
   sass-rails (~> 5.0)
   sqlite3
